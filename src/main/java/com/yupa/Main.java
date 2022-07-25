@@ -1,5 +1,6 @@
 package com.yupa;
 
+import com.yupa.builder.Casa;
 import com.yupa.factory.FactoryPago;
 import com.yupa.factory.TypePago;
 import com.yupa.singleton.Persona;
@@ -8,10 +9,10 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		
+		/*FABRICA
 		var obj = FactoryPago.builderPago(TypePago.EFECTIVO);
 		obj.pago();
-		
+		*/
 		
 		/*SINGLETON
 		var persona1 = Persona.getINSTANCE();
@@ -24,6 +25,12 @@ public class Main {
 		var persona3 = Persona.getINSTANCE();
 		System.out.println(persona3);
 		*/
+		
+		Casa casa = new Casa.CasaBuilder("Cesar")
+				.pared(true)
+				.buid();
+		
+		System.out.println(casa);
 		
 	}
 
