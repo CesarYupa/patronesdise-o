@@ -8,11 +8,12 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		/*Factory
+		
 		var obj = FactoryPago.builderPago(TypePago.EFECTIVO);
 		obj.pago();
-		*/
 		
+		
+		/*SINGLETON
 		var persona1 = Persona.getINSTANCE();
 		persona1.setNombre("Cesar");
 		persona1.setEdad(36);
@@ -22,6 +23,7 @@ public class Main {
 		
 		var persona3 = Persona.getINSTANCE();
 		System.out.println(persona3);
+		*/
 		
 	}
 
